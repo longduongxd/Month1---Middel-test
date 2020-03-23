@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPrime(a) {
+        let x = Number(a)
+        if(x<2) {
+            return false
+        }
+        if(x==2){
+            console.log(x)
+            return x
+        }
+        for (let i=2;i<x;i++){
+            if(x%i ===0){
+                return false
+                }
+            }
+        console.log(x)
+        return x
+        }
+        function summnitPrime(a) {
+        let sum = 0
+            for (let i=0; i<a.length;i++){
+                sum+=checkPrime(a[i])
+            }
+            return console.log("the sum of the number prime from input array is: "+ sum)
+        }
+        let array = [1,2,3,4,5,6,7,8,9,10];
+        summnitPrime(array)
+
+</script>
+</body>
+</html>
